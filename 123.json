@@ -1,0 +1,21 @@
+{
+    "Ad": "Emre",
+    "Soyad": "Oğuz",
+    "Kisisel": {
+        "Yas": 21,
+        "Cinsiyet": "Erkek",
+        "Boy": 172,
+        "Kilo": 58
+    },
+    "Egitim": {
+        "Üniversite": "Düzce Üniversitesi",
+        "Bolum": "Yönetim Bilişim Sistemleri",
+        "Ortalama": 3.29,
+        "Aktif": true
+    },
+    "Adres": {
+        "Sehir": "Ankara",
+        "Ulke": "Türkiye",
+        "Numara": "19/6"
+    }
+}
