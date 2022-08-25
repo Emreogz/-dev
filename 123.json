@@ -7,14 +7,14 @@
         "Boy": 172,
         "Kilo": 58
     },
-    "Egitim": {
-        "Üniversite": "Düzce Üniversitesi",
+    "Egitim": ["Ortaöğretim", "Ön Lisans", "Lisans", "Yüksek Lisans" ]
+    { "Lisans": "Düzce Üniversitesi",
         "Bolum": "Yönetim Bilişim Sistemleri",
         "Ortalama": 3.29,
         "Aktif": true
     },
-    "Adres": {
-        "Sehir": "Ankara",
+    "Adres": ["Ev Adresi", "İş Adresi"]
+    {   "Sehir": "Ankara",
         "Ulke": "Türkiye",
         "Numara": "19/6"
     }
