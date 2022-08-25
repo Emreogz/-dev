@@ -1,22 +1,27 @@
 {
     "Ad": "Emre",
     "Soyad": "Oğuz",
-    "Kisisel": {
-        "Yas": 21,
-        "Cinsiyet": "Erkek",
-        "Boy": 172,
-        "Kilo": 58
-    },
-    "Egitim": ["Ortaöğretim", "Ön Lisans", "Lisans", "Yüksek Lisans" ]
-    {   // "Düzey" : "Lisans"
+   
+    "Yas": 21,
+    "Cinsiyet": "Erkek",
+    "Boy": 172,
+    "Kilo": 58
+    ,
+    "Egitim": [ 
+        {   "Düzey" : "Lisans"
         "Okul": "Düzce Üniversitesi",
         "Bolum": "Yönetim Bilişim Sistemleri",
         "Ortalama": 3.29,
         "Aktif": true
     },
-    "Adres": ["Ev Adresi", "İş Adresi"]
-    {   "Sehir": "Ankara",
+        {    "Düzey" : "Önlisans"
+        "Okul": "Süleyman Demirel Üniversitesi",
+        "Bolum": "Bankacılık",
+        "Ortalama": 2.40,
+        "Aktif": false
+    }]
+   ,
+    "Adres": ["Sehir": "Ankara",
         "Ulke": "Türkiye",
-        "Numara": "19/6"
-    }
+        "Numara": "19/6"]
 }
