@@ -8,7 +8,8 @@
         "Kilo": 58
     },
     "Egitim": ["Ortaöğretim", "Ön Lisans", "Lisans", "Yüksek Lisans" ]
-    { "Lisans": "Düzce Üniversitesi",
+    {   // "Düzey" : "Lisans"
+        "Okul": "Düzce Üniversitesi",
         "Bolum": "Yönetim Bilişim Sistemleri",
         "Ortalama": 3.29,
         "Aktif": true
