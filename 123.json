@@ -21,7 +21,9 @@
         "Aktif": false
     }]
    ,
-    "Adres": ["Sehir": "Ankara",
+    "Adres": [
+        {"Sehir": "Ankara",
         "Ulke": "Türkiye",
-        "Numara": "19/6"]
+        "Numara": "19/6"}
+    ]
 }
