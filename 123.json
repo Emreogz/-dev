@@ -8,13 +8,13 @@
     "Kilo": 58
     ,
     "Egitim": [ 
-        {   "Düzey" : "Lisans"
+        {   "Düzey" : "Lisans",
         "Okul": "Düzce Üniversitesi",
         "Bolum": "Yönetim Bilişim Sistemleri",
         "Ortalama": 3.29,
         "Aktif": true
     },
-        {    "Düzey" : "Önlisans"
+        {    "Düzey" : "Önlisans",
         "Okul": "Süleyman Demirel Üniversitesi",
         "Bolum": "Bankacılık",
         "Ortalama": 2.40,
