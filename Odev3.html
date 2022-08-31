@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg {
+            background-image: url("arnold-francisca.jpg");
+            width: 1728px;
+            height: 1152px;
+            background-size: cover;
+            position: fixed;
+            display: flex;
+            justify-content: center; /*Nasıl tam ortalarım? */
+            /* align-items: center; */
+
+        }
+
+        .bglog {
+            background-color: whitesmoke;
+            opacity: 0.8;
+            color: black;
+            text-align: center;
+            width: 370px;
+            height: 400px;
+            position: absolute;
+            top: 150px;
+            /* left: 600px; */
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-weight:900;
+            color: red;
+        }
+
+        .input2 {
+            padding-left: 55px; /*Üstteki input ile nasıl hizalanır? */
+        }
+
+    </style>
+
+<body>
+    <div class="bg">
+
+        <div class="bglog">
+        </br>
+            <h1>Hoşgeldiniz</h1>
+        </br>
+        <form>
+            <p>
+                Kullanıcı Adı:
+                <input type="text" id="giris" class="form-input">
+            </p>
+        </br>
+            <p class="input2">
+                Şifre:
+                <input type="password" class="form-input" placeholder="Şifrenizi Giriniz">
+            </p>
+        </br>
+            <button type="submit">Giriş Yap</button>
+        </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

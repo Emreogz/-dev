@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(/arnold-francisca.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .bglog {
+            background-color: whitesmoke;
+            width: 25%;
+            min-width: 180px;
+            height: 35%;
+            opacity: 0.8;
+            text-align: center;
+            padding: 30px;
+            padding-top: 25px;
+            border-radius: 8px;
+            margin:0 auto 0 auto;
+        }
+
+        
+        h1 {
+            font-weight:900;
+            color: red;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="bglog">
+        <h1>Hoşgeldiniz</h1>
+        </br>
+        <form>
+            <p>
+                Kullanıcı Adı:
+                <input type="text" id="giris" class="form-input">
+            </p>
+            </br>
+            <p class="input2">
+                Şifre:
+                <input type="password" id="sifre" class="form-input" placeholder="Şifrenizi Giriniz">
+            </p>
+            </br>
+            <button onclick="myFunction()">Giriş Yap</button>
+        </form>
+    </div>
+    <script>
+    function myFunction() {
+    alert(document.getElementById("sifre").value);
+}
+    </script>
+</body>
+<script></script>
+</html>
