@@ -10,7 +10,7 @@
     
 <input type="text" id="giris">
 
-    <script>
+   <script>
         //null sorgusu yapılacak. 
         function test(element) {
         if (element != null && element !== undefined) {
@@ -33,8 +33,8 @@
     
         //pasif hale getirildi
         // element.disabled = true;
-        const psf = document.querySelector("input.form-input , input[type=password]").disabled =true;
-        
+        document.querySelector("input.form-input , input[type=password]").disabled =true;
+
         
         var buton = document.createElement("button");
         buton.innerHTML = "Giriş Yap";
