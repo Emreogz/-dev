@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="giris">
+
+    <script>
+        var element = document.getElementById("giris"); 
+        element.classList.add("form-input"); // class eklendi 
+    
+         element.type = "password";
+        // type değiştirildi
+    
+        // placeholder eklendi
+        element.placeholder = "Lütfen Şifrenizi Giriniz";
+    
+        //pasif hale getirildi
+        // element.disabled = true;
+    
+    
+        var buton = document.createElement("button");
+        buton.innerHTML = "Giriş Yap";
+        buton.type = "submit";
+        buton.addEventListener("click", sifreGtr);
+        function sifreGtr() {
+            alert("Şifreniz:"+element.value);
+        }
+        document.body.appendChild(buton);
+
+        
+    </script>
+    
+</body>
+</html>
