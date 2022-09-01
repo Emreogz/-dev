@@ -7,22 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="giris">
+    
+<input type="text" id="giris">
 
     <script>
+        //null sorgusu yapılacak. 
+        function test(element) {
+        if (element != null && element !== undefined) {
+        console.log("NOT NULL");
+        }
+        console.log("NULL");
+        }
+        
         var element = document.getElementById("giris"); 
         element.classList.add("form-input"); // class eklendi 
     
-         element.type = "password";
         // type değiştirildi
+        //  element.type = "password";
+        document.getElementById("giris").type="password"; 
     
+        
         // placeholder eklendi
-        element.placeholder = "Lütfen Şifrenizi Giriniz";
+        // element.placeholder = "Lütfen Şifrenizi Giriniz";
+        document.getElementsByClassName("form-input")[0].placeholder = "Lütfen Şifrenizi Giriniz";
     
         //pasif hale getirildi
         // element.disabled = true;
-    
-    
+        const psf = document.querySelector("input.form-input , input[type=password]").disabled =true;
+        
+        
         var buton = document.createElement("button");
         buton.innerHTML = "Giriş Yap";
         buton.type = "submit";
@@ -34,6 +47,5 @@
 
         
     </script>
-    
 </body>
 </html>
