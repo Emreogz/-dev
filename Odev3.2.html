@@ -1,51 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
-<input type="text" id="giris">
 
-   <script>
+<body>
+    <input type="text" id="giris" />
+    <input type="text" class="form-input" />
+    <input type="text" />
+    <p class="form-input">Yazı</p>
+
+    <script>
         //null sorgusu yapılacak. 
         function test(element) {
-        if (element != null && element !== undefined) {
-        console.log("NOT NULL");
+            if (element != null && element !== undefined) {
+                document.write("<p>NOT NULL</p>");
+            }
+            else { document.write("NULL"); }
         }
-        console.log("NULL");
-        }
-        
-        var element = document.getElementById("giris"); 
+
+
+        var element = document.getElementById("giris");
         element.classList.add("form-input"); // class eklendi 
-    
+
+        test(element); //sorgu fonksiyonu çağırıldı.
+
         // type değiştirildi
         //  element.type = "password";
-        document.getElementById("giris").type="password"; 
-    
-        
+        document.querySelector('input[type="text"]').type = "password";
+        // let cvr = 
+        // cvr.type = "password";
+
+
         // placeholder eklendi
         // element.placeholder = "Lütfen Şifrenizi Giriniz";
-        document.getElementsByClassName("form-input")[0].placeholder = "Lütfen Şifrenizi Giriniz";
-    
+        //.placeholder = "Lütfen Şifrenizi Giriniz";
+        const listItems = document.getElementsByClassName("form-input")
+        console.log(document.getElementsByClassName("form-input"))
+
+        for (let i = 0; i < listItems.length; i++) {
+            if (listItems[i].type === "text")
+                console.log(listItems[i].placeholder = "Lütfen Şifrenizi Giriniz")
+
+        }
+
+
+
         //pasif hale getirildi
         // element.disabled = true;
-        document.querySelector("input.form-input , input[type=password]").disabled =true;
+        document.querySelector("input.form-input , input[type=password]").disabled = true;
 
-        
+
+
         var buton = document.createElement("button");
         buton.innerHTML = "Giriş Yap";
         buton.type = "submit";
         buton.addEventListener("click", sifreGtr);
         function sifreGtr() {
-            alert("Şifreniz:"+element.value);
+            alert("Şifreniz:" + element.value);
         }
         document.body.appendChild(buton);
 
-        
+        function insertAfter(newNode, existingNode) {
+            existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+        }
+        insertAfter(buton, element); 
     </script>
+
 </body>
+
 </html>
