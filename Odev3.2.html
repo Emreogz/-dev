@@ -9,47 +9,48 @@
 </head>
 
 <body>
-    <input type="text" id="giris" />
-    <input type="text" class="form-input" />
-    <input type="text" />
+    <input type="text" id="giris"/>
+    <!-- <input type="text" class="form-input"/>
+    <input type="text" /> -->
     <p class="form-input">Yazı</p>
 
     <script>
         //null sorgusu yapılacak. 
-        function test(element) {
-            if (element != null && element !== undefined) {
-                document.write("<p>NOT NULL</p>");
-            }
-            else { document.write("NULL"); }
-        }
-
+        // function test(element) {
+        //     if (element != null && element !== undefined) {
+        //         document.write("<p>NOT NULL</p>");
+        //     }
+        //     else { document.write("NULL"); }
+        // }
+        ((element != null && element !== undefined) == true); 
 
         var element = document.getElementById("giris");
-        element.classList.add("form-input"); // class eklendi 
+        element.classList.add("form-input"); // class eklendi --İF ile hata önle
 
-        test(element); //sorgu fonksiyonu çağırıldı.
+        // test(element);   --sorgu fonksiyonu çağırıldı.
 
         // type değiştirildi
         //  element.type = "password";
-        document.querySelector('input[type="text"]').type = "password";
+        //YANLIŞ SEÇİLMİŞ! 
+        document.querySelector('input[type="text"]').type = "password"; //İF ile hata önle
         // let cvr = 
         // cvr.type = "password";
-
+        
 
         // placeholder eklendi
         // element.placeholder = "Lütfen Şifrenizi Giriniz";
         //.placeholder = "Lütfen Şifrenizi Giriniz";
-        const listItems = document.getElementsByClassName("form-input")
+        const listItems= document.getElementsByClassName("form-input") 
         console.log(document.getElementsByClassName("form-input"))
 
         for (let i = 0; i < listItems.length; i++) {
-            if (listItems[i].type === "text")
-                console.log(listItems[i].placeholder = "Lütfen Şifrenizi Giriniz")
-
+            if(listItems[i].type==="text")
+           console.log(listItems[i].placeholder="bxbxcv")
+            
         }
-
-
-
+        
+        
+        
         //pasif hale getirildi
         // element.disabled = true;
         document.querySelector("input.form-input , input[type=password]").disabled = true;
