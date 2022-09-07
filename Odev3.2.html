@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <input type="text" id="giris"/>
+    <input type="text" id="giris" />
     <!-- <input type="text" class="form-input"/>
     <input type="text" /> -->
     <p class="form-input">Yazı</p>
@@ -22,38 +22,54 @@
         //     }
         //     else { document.write("NULL"); }
         // }
-        ((element != null && element !== undefined) == true); 
-
+        // (element != null && element !== undefined) == true; 
         var element = document.getElementById("giris");
-        element.classList.add("form-input"); // class eklendi --İF ile hata önle
+
+        let empty = (element != null && element !== undefined);
+        if (empty) {
+            element.classList.add("form-input");
+
+        }
+
+
+
+        if (document.querySelector('input[type="text"]')) {
+            document.querySelector('input[type="text"]').type = "password";
+        }
+
+        // element.classList.add("form-input"); -- class eklendi --İF ile hata önle, öyle bir id varsa sonrasında ekle
 
         // test(element);   --sorgu fonksiyonu çağırıldı.
 
         // type değiştirildi
         //  element.type = "password";
         //YANLIŞ SEÇİLMİŞ! 
-        document.querySelector('input[type="text"]').type = "password"; //İF ile hata önle
+
+        //İF ile hata önle
         // let cvr = 
         // cvr.type = "password";
-        
+
 
         // placeholder eklendi
         // element.placeholder = "Lütfen Şifrenizi Giriniz";
         //.placeholder = "Lütfen Şifrenizi Giriniz";
-        const listItems= document.getElementsByClassName("form-input") 
-        console.log(document.getElementsByClassName("form-input"))
+        if (document.getElementsByClassName("form-input")) {
+            const listItems = document.getElementsByClassName("form-input")
+            console.log(document.getElementsByClassName("form-input"))
 
-        for (let i = 0; i < listItems.length; i++) {
-            if(listItems[i].type==="text")
-           console.log(listItems[i].placeholder="bxbxcv")
-            
+            for (let i = 0; i < listItems.length; i++) {
+                if (listItems[i].type === "text")
+                    console.log(listItems[i].placeholder = "bxbxcv")
+
+            }
         }
-        
-        
-        
+
+
         //pasif hale getirildi
         // element.disabled = true;
-        document.querySelector("input.form-input , input[type=password]").disabled = true;
+        if (document.querySelector("input.form-input , input[type=password]")) {
+            document.querySelector("input.form-input , input[type=password]").disabled = true;
+        }
 
 
 
@@ -69,7 +85,14 @@
         function insertAfter(newNode, existingNode) {
             existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
         }
-        insertAfter(buton, element); 
+        insertAfter(buton, element);
+
+        // function query(picked) {
+        //     if (picked) {
+        //         return true;
+        //     }
+        //     return false;
+        // }
     </script>
 
 </body>
